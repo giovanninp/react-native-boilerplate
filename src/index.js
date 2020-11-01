@@ -1,10 +1,15 @@
 import React from 'react';
-import Home from './screens/Home';
+import Routes from './routes';
+
+import 'react-native-gesture-handler';
+
 
 class App extends React.Component {
   render() {
-    return <Home />;
+    return (
+        <Routes />
+    );
   }
-};
+}
 
 export default App;
