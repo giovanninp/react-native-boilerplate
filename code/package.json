@@ -9,6 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
+    "lint:staged": "lint-staged",
     "prepare": "cd .. && husky install code/.husky"
   },
   "dependencies": {
@@ -45,7 +46,13 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "expo-doctor": "^1.17.14",
     "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "typescript": "~5.9.2"
   },
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
 }
