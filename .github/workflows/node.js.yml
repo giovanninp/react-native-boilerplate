@@ -28,3 +28,7 @@ jobs:
       - name: Run ESLint
         run: yarn lint
         working-directory: code
+
+      - name: Run Doctor
+        run: yarn doctor
+        working-directory: code

@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
 yarn --cwd code lint:staged
+yarn --cwd code doctor
