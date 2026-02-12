@@ -1,0 +1,11 @@
+pre-commit:
+  jobs:
+    - name: lint verification
+      run: yarn --cwd code lint:staged
+
+pre-push:
+  jobs:
+    - name: lint verification
+      run: yarn --cwd code lint:staged
+    - name: dependencies audit
+      run: yarn audit
