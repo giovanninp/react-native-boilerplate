@@ -8,4 +8,4 @@ pre-push:
     - name: lint verification
       run: yarn --cwd code lint:staged
     - name: dependencies audit
-      run: yarn audit
+      run: yarn --cwd code audit:prod
