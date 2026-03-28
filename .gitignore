@@ -3,6 +3,12 @@
 # dependencies
 node_modules/
 
+# Yarn 4 (Sem Zero-Installs)
+code/.yarn/cache
+code/.yarn/build-state.yml
+code/.yarn/install-state.gz
+code/.pnp.*
+
 # Expo
 .expo/
 dist/
