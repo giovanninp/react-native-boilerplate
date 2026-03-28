@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: "22.20.0"
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
         working-directory: code
