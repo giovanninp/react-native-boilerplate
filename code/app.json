@@ -28,6 +28,10 @@
     "plugins": [
       "expo-router",
       [
+        "./plugins/ios/withFmtFix.js",
+        { "message": "Custom message from app.config.ts" }
+      ],
+      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
