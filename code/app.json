@@ -29,7 +29,9 @@
       "expo-router",
       [
         "./plugins/ios/withFmtFix.js",
-        { "message": "Custom message from app.config.ts" }
+        {
+          "message": "Custom message from app.config.ts"
+        }
       ],
       [
         "expo-splash-screen",
@@ -50,7 +52,9 @@
           "useHermesV1": true
         }
       ],
-      "expo-font"
+      "expo-font",
+      "expo-image",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
